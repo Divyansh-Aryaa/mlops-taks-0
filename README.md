@@ -27,21 +27,32 @@ src/
 
 python run.py --input data.csv --config config.yaml --output metrics.json --log-file run.log
 
-Build:
+## Build:
+
 docker build -t mlops-task .
 
-Run:
+## Run:
+
 docker run --rm mlops-task
 
 
-Example Output
+## Example Output
+
 {
+
   "version": "v1",
+  
   "rows_processed": 10000,
+  
   "metric": "signal_rate",
+  
   "value": 0.0,
+  
   "latency_ms": 30,
+  
   "seed": 42,
+  
   "status": "success"
+  
 }
 
