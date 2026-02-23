@@ -1,5 +1,11 @@
 # ML/MLOps PrimedataAI Task 0
 
+![Python](https://img.shields.io/badge/Python-3.9-blue)
+![Docker](https://img.shields.io/badge/Docker-Ready-blue)
+![Status](https://img.shields.io/badge/Status-Success-brightgreen)
+![MLOps](https://img.shields.io/badge/MLOps-Batch%20Pipeline-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 ## Overview
 This project implements a minimal MLOps-style batch pipeline that demonstrates:
 
