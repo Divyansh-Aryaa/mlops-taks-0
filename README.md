@@ -1,4 +1,4 @@
-# ML/MLOps PrimedataAI Task 0
+# ML/MLOps PrimetradeAI Task 0
 
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
 ![Docker](https://img.shields.io/badge/Docker-Ready-blue)
