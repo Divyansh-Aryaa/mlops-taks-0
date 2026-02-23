@@ -12,8 +12,9 @@ venv/
 # Mac files
 .DS_Store
 
-# Logs (optional)
+# Logs 
 *.log
+!run.log
 
 # VS Code settings
 .vscode/

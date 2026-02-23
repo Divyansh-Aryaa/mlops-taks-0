@@ -1,0 +1,185 @@
+2026-02-23 16:50:29,782 - INFO - Job started
+2026-02-23 16:50:29,782 - ERROR - Job failed
+Traceback (most recent call last):
+  File "/Users/divyansharya/Desktop/Project/mlops-task/run.py", line 32, in main
+    config = load_config(args.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/src/config.py", line 12, in load_config
+    if key not in config:
+       ^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'NoneType' is not iterable
+2026-02-23 17:09:05,191 - INFO - Job started
+2026-02-23 17:09:05,192 - INFO - Config loaded: {'seed': 42, 'window': 5, 'version': 'v1'}
+2026-02-23 17:09:05,193 - ERROR - Job failed
+Traceback (most recent call last):
+  File "/Users/divyansharya/Desktop/Project/mlops-task/src/data.py", line 6, in load_data
+    df = pd.read_csv(input_path)
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1922, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/venv/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 95, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 575, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divyansharya/Desktop/Project/mlops-task/run.py", line 35, in main
+    df = load_data(args.input)
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/src/data.py", line 8, in load_data
+    raise ValueError("Invalid CSV file not readaable")
+ValueError: Invalid CSV file not readaable
+2026-02-23 17:14:41,445 - INFO - Job started
+2026-02-23 17:14:41,445 - INFO - Config loaded: {'seed': 42, 'window': 5, 'version': 'v1'}
+2026-02-23 17:14:41,453 - ERROR - Job failed
+Traceback (most recent call last):
+  File "/Users/divyansharya/Desktop/Project/mlops-task/run.py", line 35, in main
+    df = load_data(args.input)
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/src/data.py", line 14, in load_data
+    raise ValueError("Missing required column: close")
+ValueError: Missing required column: close
+2026-02-23 17:15:29,912 - INFO - Job started
+2026-02-23 17:15:29,912 - INFO - Config loaded: {'seed': 42, 'window': 5, 'version': 'v1'}
+2026-02-23 17:15:29,917 - ERROR - Job failed
+Traceback (most recent call last):
+  File "/Users/divyansharya/Desktop/Project/mlops-task/run.py", line 35, in main
+    df = load_data(args.input)
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/src/data.py", line 14, in load_data
+    raise ValueError("Missing required column: close")
+ValueError: Missing required column: close
+2026-02-23 17:18:49,827 - INFO - Job started
+2026-02-23 17:18:49,828 - INFO - Config loaded: {'seed': 42, 'window': 5, 'version': 'v1'}
+2026-02-23 17:18:49,835 - ERROR - Job failed
+Traceback (most recent call last):
+  File "/Users/divyansharya/Desktop/Project/mlops-task/run.py", line 35, in main
+    df = load_data(args.input)
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/src/data.py", line 14, in load_data
+    raise ValueError("Missing required column: close")
+ValueError: Missing required column: close
+2026-02-23 17:21:56,935 - INFO - Job started
+2026-02-23 17:21:56,935 - INFO - Config loaded: {'seed': 42, 'window': 5, 'version': 'v1'}
+2026-02-23 17:21:56,943 - ERROR - Job failed
+Traceback (most recent call last):
+  File "/Users/divyansharya/Desktop/Project/mlops-task/run.py", line 35, in main
+    df = load_data(args.input)
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/src/data.py", line 14, in load_data
+    raise ValueError("Missing required column: close")
+ValueError: Missing required column: close
+2026-02-23 17:30:04,606 - INFO - Job started
+2026-02-23 17:30:04,606 - INFO - Config loaded: {'seed': 42, 'window': 5, 'version': 'v1'}
+2026-02-23 17:30:04,621 - ERROR - Job failed
+Traceback (most recent call last):
+  File "/Users/divyansharya/Desktop/Project/mlops-task/run.py", line 35, in main
+    df = load_data(args.input)
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/src/data.py", line 18, in load_data
+    raise ValueError("Missing required column: close")
+ValueError: Missing required column: close
+2026-02-23 17:34:12,594 - INFO - Job started
+2026-02-23 17:34:12,594 - INFO - Config loaded: {'seed': 42, 'window': 5, 'version': 'v1'}
+2026-02-23 17:34:12,607 - ERROR - Job failed
+Traceback (most recent call last):
+  File "/Users/divyansharya/Desktop/Project/mlops-task/run.py", line 35, in main
+    df = load_data(args.input)
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/src/data.py", line 18, in load_data
+    raise ValueError("Missing required column: close")
+ValueError: Missing required column: close
+2026-02-23 17:38:32,599 - INFO - Job started
+2026-02-23 17:38:32,600 - INFO - Config loaded: {'seed': 42, 'window': 5, 'version': 'v1'}
+2026-02-23 17:38:32,611 - ERROR - Job failed
+Traceback (most recent call last):
+  File "/Users/divyansharya/Desktop/Project/mlops-task/run.py", line 35, in main
+    df = load_data(args.input)
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/src/data.py", line 18, in load_data
+    raise ValueError("Missing required column: close")
+ValueError: Missing required column: close
+2026-02-23 17:38:54,735 - INFO - Job started
+2026-02-23 17:38:54,735 - INFO - Config loaded: {'seed': 42, 'window': 5, 'version': 'v1'}
+2026-02-23 17:38:54,744 - ERROR - Job failed
+Traceback (most recent call last):
+  File "/Users/divyansharya/Desktop/Project/mlops-task/run.py", line 35, in main
+    df = load_data(args.input)
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/src/data.py", line 18, in load_data
+    raise ValueError("Missing required column: close")
+ValueError: Missing required column: close
+2026-02-23 17:44:16,376 - INFO - Job started
+2026-02-23 17:44:16,376 - INFO - Config loaded: {'seed': 42, 'window': 5, 'version': 'v1'}
+2026-02-23 17:44:16,385 - ERROR - Job failed
+Traceback (most recent call last):
+  File "/Users/divyansharya/Desktop/Project/mlops-task/run.py", line 35, in main
+    df = load_data(args.input)
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/src/data.py", line 16, in load_data
+    raise ValueError(f"Missing required column: close. Found columns: {df.columns.tolist()}")
+ValueError: Missing required column: close. Found columns: ['timestamp,open,high,low,close,volume_btc,volume_usd', 'unnamed: 1']
+2026-02-23 17:53:28,962 - INFO - Job started
+2026-02-23 17:53:28,963 - INFO - Config loaded: {'seed': 42, 'window': 5, 'version': 'v1'}
+2026-02-23 17:53:28,985 - INFO - Rows loaded: 10000
+2026-02-23 17:53:28,988 - INFO - Rolling mean and signal generated
+2026-02-23 17:53:28,989 - INFO - Metrics: {'version': 'v1', 'rows_processed': 10000, 'metric': 'signal_rate', 'value': 0.0, 'latency_ms': 26, 'seed': 42, 'status': 'success'}
+2026-02-23 17:53:28,989 - INFO - Job completed successfully
+2026-02-23 17:58:34,846 - INFO - Job started
+2026-02-23 17:58:34,847 - INFO - Config loaded: {'seed': 42, 'window': 5, 'version': 'v1'}
+2026-02-23 17:58:34,871 - INFO - Rows loaded: 10000
+2026-02-23 17:58:34,878 - INFO - Rolling mean and signal generated
+2026-02-23 17:58:34,879 - INFO - Metrics: {'version': 'v1', 'rows_processed': 10000, 'metric': 'signal_rate', 'value': 0.0, 'latency_ms': 32, 'seed': 42, 'status': 'success'}
+2026-02-23 17:58:34,879 - INFO - Job completed successfully
+2026-02-23 17:59:08,683 - INFO - Job started
+2026-02-23 17:59:08,684 - INFO - Config loaded: {'seed': 42, 'window': 5, 'version': 'v1'}
+2026-02-23 17:59:08,684 - ERROR - Job failed
+Traceback (most recent call last):
+  File "/Users/divyansharya/Desktop/Project/mlops-task/src/data.py", line 6, in load_data
+    df = pd.read_csv(input_path, sep=None, engine="python")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/venv/lib/python3.11/site-packages/pandas/io/common.py", line 926, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'wrong.csv'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divyansharya/Desktop/Project/mlops-task/run.py", line 35, in main
+    df = load_data(args.input)
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/divyansharya/Desktop/Project/mlops-task/src/data.py", line 10, in load_data
+    raise ValueError(f"Invalid CSV file not readable: {e}")
+ValueError: Invalid CSV file not readable: [Errno 2] No such file or directory: 'wrong.csv'
+2026-02-23 18:06:25,983 - INFO - Job started
+2026-02-23 18:06:25,984 - INFO - Config loaded: {'seed': 42, 'window': 5, 'version': 'v1'}
+2026-02-23 18:06:26,007 - INFO - Rows loaded: 10000
+2026-02-23 18:06:26,009 - INFO - Rolling mean and signal generated
+2026-02-23 18:06:26,010 - INFO - Metrics: {'version': 'v1', 'rows_processed': 10000, 'metric': 'signal_rate', 'value': 0.0, 'latency_ms': 26, 'seed': 42, 'status': 'success'}
+2026-02-23 18:06:26,010 - INFO - Job completed successfully
