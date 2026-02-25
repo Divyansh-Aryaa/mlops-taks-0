@@ -6,7 +6,7 @@
 ![MLOps](https://img.shields.io/badge/MLOps-Batch%20Pipeline-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-## Overview
+## Task Overview
 This project implements a minimal MLOps-style batch pipeline that demonstrates:
 
 - Reproducibility (config-driven + seed)
@@ -17,17 +17,24 @@ The pipeline loads OHLCV data, computes a rolling mean on `close`, generates bin
 
 ---
 
-## Project Structure
+## PROJECT STRUCTURE
+```BASH
 
-run.py
-config.yaml
-data.csv
-requirements.txt
-Dockerfile
-src/
-
-
----
+mlops-task-0/
+│
+├── src/
+│   ├── logger.py        # Logging setup
+│   ├── config.py        # Configuration loader
+│   ├── processor.py     # Core processing logic
+│   ├── metrics.py       # Metrics calculation
+│   └── utils.py         # Helper functions
+│
+├── config.yaml          # Pipeline configuration
+├── data.csv             # Input dataset
+├── output.json          # Pipeline results
+├── requirements.txt
+└── main.py              # Entry point
+```
 
 ## Local Run
 
@@ -89,26 +96,6 @@ This mimics industry MLOps workflows where experimentation and production pipeli
 # END-TO-END FLOWCHART
 
 ![alt text](image-1.png)
-
-# PROJECT STRUCTURE
-
-```BASH
-
-mlops-task-0/
-│
-├── src/
-│   ├── logger.py        # Logging setup
-│   ├── config.py        # Configuration loader
-│   ├── processor.py     # Core processing logic
-│   ├── metrics.py       # Metrics calculation
-│   └── utils.py         # Helper functions
-│
-├── config.yaml          # Pipeline configuration
-├── data.csv             # Input dataset
-├── output.json          # Pipeline results
-├── requirements.txt
-└── main.py              # Entry point
-```
 
 # CONFIGURATION-DRIVEN DESIGN
 
