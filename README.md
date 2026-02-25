@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-# ML/MLOps PrimetradeAI Task 0
 
-=======
 # ML/MLOps PrimedataAI Task 0
->>>>>>> f147137 (updated Readme)
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
 ![Docker](https://img.shields.io/badge/Docker-Ready-blue)
 ![Status](https://img.shields.io/badge/Status-Success-brightgreen)
@@ -130,8 +126,6 @@ version: "v1"
 - Reproducibility (fixed seed)
 - Easy experimentation
 - Zero code modification runs
-
-Example config loaded
 
 # LOGGING SYSTEM
 
